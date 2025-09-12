@@ -1,0 +1,299 @@
+/* Reset básico */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  margin: 0.5em 0;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222; /* gris oscuro elegante */
+  padding: 0.7em 1.5em;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 0.6em;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #c084fc; /* lavanda suave */
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  padding: 2em 3em;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  color: #c084fc; /* lavanda */
+}
+
+.hero-content h6 {
+  font-size: 1em;
+  margin-top: 0.5em;
+  color: #f1f1f1;
+}
+
+.hero-content button {
+  margin-top: 1em;
+  background: #c084fc;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 0.7em 1.5em;
+  transition: background 0.3s ease;
+}
+
+.hero-content button:hover {
+  background: #a855f7; /* lavanda más intensa */
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  max-width: 1200px;
+  margin: 2em auto;
+  gap: 2em;
+  padding: 0 1em;
+}
+
+/* Blog */
+.blog {
+  flex: 2;
+}
+
+.blog article {
+  background: #fff;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.blog article img {
+  border-radius: 10px;
+  margin: 1em 0;
+  width: 100%;
+  height: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8em;
+}
+
+.actions button {
+  background: #222;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease;
+}
+
+.actions button:hover {
+  background: #c084fc;
+}
+
+/* Comentarios */
+.comments {
+  display: none;
+  margin-top: 1em;
+  border-top: 1px solid #ddd;
+  padding-top: 0.5em;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.card h4 {
+  color: #c084fc;
+}
+
+/* Inputs */
+input[type="email"] {
+  width: 100%;
+  padding: 0.7em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 0.8em 0;
+}
+
+.card button {
+  background: #222;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0.7em 1.5em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background: #c084fc;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top:0; left:0; width:100%; height:100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2em;
+  position: relative;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.modal-content h2 {
+  color: #c084fc;
+  margin-bottom: 1em;
+}
+
+.close {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+footer button {
+  background: #c084fc;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0.7em 1.5em;
+  margin-bottom: 1em;
+  transition: all 0.3s ease;
+}
+
+footer button:hover {
+  background: #a855f7;
+}
+
+/* Botones generales */
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button:focus-visible {
+  outline: 2px solid #c084fc;
+  outline-offset: 2px;
+}
+
+/* Carrusel */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  opacity: 1;
+}

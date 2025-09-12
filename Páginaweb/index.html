@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Giselle Rosales">
+  <meta name="copyright" content="© 2025 MOVIMIENTOS CONTEMPORÁNEOS">
+  <title>Movimientos Contemporáneos</title>
+
+  <!-- Fuentes y iconos -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook-official"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-spotify"></i></a>
+    </div>
+    <a href="#" class="search"><i class="fa fa-search"></i></a>
+  </nav>
+
+  <!-- Header principal -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>M O V I M I E N T O S &nbsp; C O N T E M P O R Á N E O S</h1>
+      <h6 style="background: rgba(0, 0, 0, 0.5);">Explora el mundo del <span>baile</span> con Giselle Rosales</h6> 
+      <button onclick="toggleModal('contacto')">CONTACTO</button>
+    </div>
+    <img src="img/danza1.jpg" alt="Baile contemporáneo portada">
+    
+    <div class="slide">
+      <img src="img/festival.jpg" alt="Danza libre contemporánea">
+      <div class="hero-content">
+        <h1>Movimiento y Expresión</h1>
+        <h6 style="background: rgba(0, 0, 0, 0.5);">El cuerpo como medio artístico</h6>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="img/festival.jpg" alt="Escena de danza contemporánea">
+      <div class="hero-content">
+        <h1>Fusión de Estilos</h1>
+        <h6 style="background: rgba(0, 0, 0, 0.5);">De lo clásico a lo experimental</h6>
+      </div>
+    </div>
+  </header>
+<!-- Header principal -->
+  <header class="hero">
+    <div class="hero-content">
+         <div class="slide active"></div>
+      <h1>B A I L E &nbsp; C O N T E M P O R Á N E O</h1>
+      <h6 style="background: rgba(0, 0, 0, 0.5);">Explora el mundo de la <span>baile</span> con  Giselle Rosales</h6> 
+      <button onclick="toggleModal('contacto')">CONTACTO</button>
+    </div>
+    <img src="img/danza2.jpg" alt="Ritmos Urbanos portada">
+ <div class="slide">
+        <img src="img/danza3.jpg" alt="Imagen 2">
+        <div class="hero-content">
+          <h1>Ritmos que Inspiran</h1>
+          <h6 style="background: rgba(0, 0, 0, 0.5);">El baile un estilo de vida</h6>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="img/festival.jpg" alt="Imagen 3">
+        <div class="hero-content">
+          <h1>Vibra con el baile</h1>
+          <h6 style="background: rgba(0, 0, 0, 0.5);">Baila al ritmo de tu cuerpo</h6>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main content -->
+  <main class="content">
+    <!-- Blog posts -->
+    <section class="blog">
+      <article>
+        <h3>Historia del Baile Contemporáneo</h3>
+        <h5>Artículo destacado <span>Mayo 2, 2025</span></h5>
+        <img src="img/festival.jpg" alt="Historia del baile contemporáneo">
+        <p>El baile contemporáneo surge a mediados del siglo XX como una ruptura con la danza clásica, explorando movimientos más libres, expresivos y cercanos a la emoción del intérprete.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Me gusta</button>
+          <button onclick="toggleComments('coment1')">Comentarios <span>1</span></button>
+        </div>
+        <div id="coment1" class="comments">
+          <p>Ana: ¡El baile contemporáneo me conecta con mis emociones! 💃</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Coreógrafos que Transformaron la Danza</h3>
+        <h5>Inspiración artística <span>Abril 23, 2025</span></h5>
+        <img src="img/danza3.jpg" alt="Coreógrafos de danza contemporánea">
+        <p>Figuras como Pina Bausch, Martha Graham y Merce Cunningham revolucionaron la forma en que entendemos el cuerpo y el escenario en la danza contemporánea.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Me gusta</button>
+          <button onclick="toggleComments('coment2')">Comentarios <span>2</span></button>
+        </div>
+        <div id="coment2" class="comments">
+          <p>Carla: ¡Pina Bausch es mi máxima inspiración! ✨</p>
+          <p>Roberto: La danza contemporánea es un arte que rompe esquemas.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card">
+        <h4>Giselle Rosales</h4>
+        <p>Apasionado por la danza en todas sus formas, especialmente el baile contemporáneo como lenguaje universal del cuerpo. 🌎💫</p>
+      </div>
+
+      <div class="card">
+        <h4>Suscríbete</h4>
+        <input type="email" placeholder="Ingresa tu correo">
+        <button onclick="toggleModal('contacto')">Suscribirme</button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal -->
+  <div id="contacto" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal('contacto')">&times;</span>
+      <h2>Contáctame</h2>
+      <input type="email" placeholder="Ingresa tu correo">
+      <button onclick="toggleModal('contacto')">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <button onclick="scrollToTop()"><i class="fa fa-arrow-up"></i> Subir</button>
+    <p>© 2025 Movimientos Contemporáneos | Creado por Giselle Rosales</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
