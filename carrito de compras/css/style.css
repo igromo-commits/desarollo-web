@@ -1,0 +1,76 @@
+/* Imagen de productos con tamaño uniforme */
+.producto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Botón de lujo */
+.btn-lujo {
+  background-color: #0047ab; /* azul eléctrico */
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+.btn-lujo:hover {
+  background-color: #002f6c;
+  color: #ffd700; /* dorado */
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+  background-color: #ffd700; /* dorado */
+  color: #000;
+  border: none;
+  transition: 0.3s;
+}
+.btn-eliminar:hover {
+  background-color: #b8860b; /* dorado oscuro */
+  color: #fff;
+}
+
+/* Animaciones de agregado/eliminado */
+.agregado {
+  background-color: #e0f0ff !important; /* azul claro */
+  color: #0047ab !important;
+  animation: fade 1s ease-in-out;
+}
+
+.eliminado {
+  background-color: #fff8dc !important; /* crema dorado */
+  color: #b8860b !important;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+/* HERO con imagen de maquillaje */
+.hero {
+  position: relative;
+  height: 50vh;
+  background-image: url('../IMG/portada.jpg'); /* Imagen principal de maquillaje */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
