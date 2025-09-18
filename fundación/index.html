@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fundación Artea — Demo</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <div class="logo">FA</div>
+      <div>
+        <div class="brand-title">Fundación Artea</div>
+        <div class="brand-sub">Arte • Cultura • Juventud</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#mision">Misión</a>
+      <a href="#programas">Programas</a>
+      <a href="#impacto">Noticias</a>
+      <a href="#contacto">Contacto</a>
+      <a class="cta" href="#donar">Donar</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div>
+      <h1>Inspirando jóvenes a través del arte</h1>
+      <p>Promovemos talleres culturales y artísticos para que los jóvenes de comunidades urbanas desarrollen su creatividad y talento.</p>
+      <div class="hero-buttons">
+        <a class="cta" href="#donar">Donar ahora</a>
+        <a class="secondary" href="#programas">Conoce los programas</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Años</div></div>
+        <div class="stat"><div class="stat-num">8k</div><div class="stat-label">Beneficiarios</div></div>
+        <div class="stat"><div class="stat-num">90</div><div class="stat-label">Voluntarios</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-card">
+        <div class="hero-card-text">
+          <div class="hero-card-title">Inspiración artística</div>
+          <div class="hero-card">
+  <img src="img/andrew-backhouse-xNL8l0ui03c-unsplash.jpg" alt="Taller de arte real">
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Misión -->
+  <section id="mision">
+    <h2>Nuestra misión</h2>
+    <p class="section-desc">Fomentar el desarrollo artístico y cultural de jóvenes en comunidades urbanas, brindando acceso a talleres de música, pintura, danza y teatro.</p>
+  </section>
+
+  <!-- Programas -->
+  <section id="programas" class="programs">
+    <h2>Programas destacados</h2>
+    <div class="grid-3">
+      <div class="card">
+        <img src="https://picsum.photos/seed/art1/800/400" alt="Taller de pintura">
+        <h3>Taller de pintura</h3>
+        <p>Clases de pintura para desarrollar creatividad y expresión artística.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/seed/art2/800/400" alt="Música y sonido">
+        <h3>Clases de música</h3>
+        <p>Aprendizaje musical con instrumentos y composición.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/seed/art3/800/400" alt="Teatro">
+        <h3>Taller de teatro</h3>
+        <p>Expresión escénica y desarrollo de confianza y habilidades de comunicación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section id="impacto">
+    <h2>Noticias y novedades</h2>
+    <p class="section-desc">Últimas entradas generadas desde una API REST (demo).</p>
+    <div id="news" class="news-list">
+      <div class="card">Cargando noticias...</div>
+    </div>
+  </section>
+
+  <!-- Voluntarios -->
+  <section id="voluntarios">
+    <h2>Voluntarios y testimonios</h2>
+    <p class="section-desc">Perfiles de ejemplo suministrados por una API pública.</p>
+    <div id="vols" class="vol-grid">
+      <div class="card">Cargando perfiles...</div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-box card">
+      <div class="contact-info">
+        <p>📍 Ciudad de México, México<br>✉️ contacto@fundacionartea.org<br>📞 +52 55 9876 5432</p>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <input name="name" placeholder="Nombre" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Mensaje"></textarea>
+        <div class="form-actions">
+          <button type="submit">Enviar</button>
+          <small>Este formulario es demo (no envía realmente).</small>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div>Fundación Artea • © <span id="year"></span> Giselle Rosales, Alexia Reyes, Daniel Guerrero, Paola Hérnandez, Diego Fragoso</div> 
+  <div class="footer-links">Política de privacidad · Términos</div>
+</footer>
+
+<!-- JS externo -->
+<script src="js/script.js"></script>
+</body>
+</html>
